@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Presentation", "01-Presentation", "{81617F44-3442-441C-962D-801E58AA4AE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Business Logic", "02-Business Logic", "{11C843C6-583D-471F-AC09-13D66DD0ABBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Data Access", "03-Data Access", "{77D6EF5F-BC93-4944-8184-17E933F72299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{7C98DB47-5387-46A1-8D0D-C7AC3246ED5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{633E8EED-7D3F-42AD-A524-9D8CD4F54568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_winForm", "UI_winForm\UI_winForm.csproj", "{7BD8EBE2-DBEF-4054-A86A-448178FE7DCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C98DB47-5387-46A1-8D0D-C7AC3246ED5E} = {77D6EF5F-BC93-4944-8184-17E933F72299}
+		{633E8EED-7D3F-42AD-A524-9D8CD4F54568} = {11C843C6-583D-471F-AC09-13D66DD0ABBA}
+		{7BD8EBE2-DBEF-4054-A86A-448178FE7DCC} = {81617F44-3442-441C-962D-801E58AA4AE2}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C98DB47-5387-46A1-8D0D-C7AC3246ED5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C98DB47-5387-46A1-8D0D-C7AC3246ED5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C98DB47-5387-46A1-8D0D-C7AC3246ED5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C98DB47-5387-46A1-8D0D-C7AC3246ED5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633E8EED-7D3F-42AD-A524-9D8CD4F54568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633E8EED-7D3F-42AD-A524-9D8CD4F54568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633E8EED-7D3F-42AD-A524-9D8CD4F54568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633E8EED-7D3F-42AD-A524-9D8CD4F54568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD8EBE2-DBEF-4054-A86A-448178FE7DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD8EBE2-DBEF-4054-A86A-448178FE7DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD8EBE2-DBEF-4054-A86A-448178FE7DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD8EBE2-DBEF-4054-A86A-448178FE7DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
