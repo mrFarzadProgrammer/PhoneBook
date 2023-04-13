@@ -31,6 +31,8 @@
             dataGridView1 = new System.Windows.Forms.DataGridView();
             btnSearch = new System.Windows.Forms.Button();
             txtSearchKey = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -56,16 +58,37 @@
             // 
             // txtSearchKey
             // 
-            txtSearchKey.Location = new System.Drawing.Point(12, 123);
+            txtSearchKey.Location = new System.Drawing.Point(242, 92);
             txtSearchKey.Name = "txtSearchKey";
-            txtSearchKey.Size = new System.Drawing.Size(215, 25);
+            txtSearchKey.Size = new System.Drawing.Size(230, 25);
             txtSearchKey.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(307, 61);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(86, 18);
+            label1.TabIndex = 3;
+            label1.Text = "جستجو کنید";
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new System.Drawing.Point(6, 125);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(230, 23);
+            btnDelete.TabIndex = 4;
+            btnDelete.Text = "حذف مخاطب";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // frmMain
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(484, 521);
+            Controls.Add(btnDelete);
+            Controls.Add(label1);
             Controls.Add(txtSearchKey);
             Controls.Add(btnSearch);
             Controls.Add(dataGridView1);
@@ -88,5 +111,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearchKey;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

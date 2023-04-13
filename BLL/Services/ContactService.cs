@@ -25,7 +25,7 @@ namespace BLL.Services
         }
 
         /// <summary>
-        /// سرچ بین مخاطبان
+        /// جستجو
         /// </summary>
         /// <param name="SearchKey"></param>
         /// <returns></returns>
@@ -49,6 +49,35 @@ namespace BLL.Services
                 PhoneNumber = c.PhoneNumber
             }).ToList();
             return data;
+        }
+
+        /// <summary>
+        /// حذف
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public ResultDto DeleteContact(int Id)
+        {
+            var contact = dataBase.Contacts.Find(Id);
+            if (contact != null)
+            {
+                dataBase.Remove(contact);
+                dataBase.SaveChanges();
+                return new ResultDto
+                {
+                    IsSuccess = true,
+                    Message = "مخاطب با موفقیت حذف شد."
+                };
+            }
+            else
+            {
+                return new ResultDto
+                {
+                    IsSuccess = false,
+                    Message = "مخاطب یافت نشد."
+                };
+            }
+
         }
     }
 }

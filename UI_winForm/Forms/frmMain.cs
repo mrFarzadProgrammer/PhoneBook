@@ -44,11 +44,24 @@ namespace UI_winForm.Forms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            this.Cursor= Cursors.WaitCursor;
+            this.Cursor = Cursors.WaitCursor;
             var listContacts = contactService.SearchContact(txtSearchKey.Text);
 
             this.SettingGridView(listContacts);
             this.Cursor = Cursors.Default;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var Id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            var result = contactService.DeleteContact(Id);
+            if (result.IsSuccess == true)
+            { 
+                MessageBox.Show(result.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmMain_Load(null,null);
+            }
+            else
+                MessageBox.Show(result.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
