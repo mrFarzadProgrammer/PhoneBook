@@ -1,5 +1,7 @@
 ﻿using BLL.Dto;
 using DAL.DataBase;
+using DAL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -79,5 +81,74 @@ namespace BLL.Services
             }
 
         }
+
+        /// <summary>
+        /// جزئیات مخاطب
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public ResultDto<ContactDetailDto> GetContactDetail(int Id)
+        {
+            var contact = dataBase.Contacts.Find(Id);
+            if (contact == null)
+            {
+                return new ResultDto<ContactDetailDto>
+                {
+                    IsSuccess = false,
+                    Message = "مخاطب یافت نشد.",
+                    Data = null
+                };
+            }
+
+            var data = new ContactDetailDto
+            {
+                Id = contact.Id,
+                Name = contact.Name,
+                LastName = contact.LastName,
+                PhoneNumber = contact.PhoneNumber,
+                Company = contact.Company,
+                Description = contact.Description,
+                CreateAt = contact.CreateAt,
+            };
+            return new ResultDto<ContactDetailDto>
+            {
+                IsSuccess = true,
+                Data = data
+            };
+        }
+
+        /// <summary>
+        /// افزودن مخاطب جدید
+        /// </summary>
+        /// <param name="NewContact"></param>
+        /// <returns></returns>
+        public ResultDto AddNewContact(AddNewContactDto NewContact)
+        {
+            if (string.IsNullOrEmpty(NewContact.PhoneNumber)) 
+            {
+                return new ResultDto
+                {
+                    IsSuccess = false,
+                    Message = "شماره موبایل اجباری می باشد. لطفا شماره موبایل هم وارد کنید."
+                };
+            }
+            Contact contact = new Contact()
+            {
+                Name = NewContact.Name,
+                LastName = NewContact.LastName,
+                PhoneNumber = NewContact.PhoneNumber,
+                Company = NewContact.Company,
+                Description = NewContact.Description,
+                CreateAt = DateTime.Now,
+            };
+            dataBase.Contacts.Add(contact);
+            dataBase.SaveChanges();
+            return new ResultDto
+            {
+                IsSuccess = true,
+                Message = $"مخاطب {contact.Name} {contact.LastName} با موفقیت در دیتابیس ذخیره شد.",
+            };        }
+
+        
     }
 }

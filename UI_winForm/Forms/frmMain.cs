@@ -56,12 +56,36 @@ namespace UI_winForm.Forms
             var Id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             var result = contactService.DeleteContact(Id);
             if (result.IsSuccess == true)
-            { 
+            {
                 MessageBox.Show(result.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmMain_Load(null,null);
+                frmMain_Load(null, null);
             }
             else
                 MessageBox.Show(result.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowDetail();
+        }
+
+        private void ShowDetail()
+        {
+            var Id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            frmDetailContact frmDetailContact = new frmDetailContact(Id);
+            frmDetailContact.ShowDialog();
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            ShowDetail();
+        }
+
+        private void btnAddNewContact_Click(object sender, EventArgs e)
+        {
+            frmAddContact frmAddContact = new frmAddContact();
+            frmAddContact.ShowDialog();
+            frmMain_Load(null,null);
         }
     }
 }
