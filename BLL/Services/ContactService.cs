@@ -181,5 +181,6 @@ namespace BLL.Services
                 Message = "اطلاعات مخاطب با موفقیت ویرایش شد."
             };
         }
+
     }
 }

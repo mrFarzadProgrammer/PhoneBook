@@ -1,0 +1,15 @@
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\bin\Debug\net5.0\DAL.deps.json
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\bin\Debug\net5.0\DAL.runtimeconfig.json
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\bin\Debug\net5.0\DAL.runtimeconfig.dev.json
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\bin\Debug\net5.0\DAL.dll
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\bin\Debug\net5.0\DAL.pdb
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.dll
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\refint\DAL.dll
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.pdb
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\DAL.genruntimeconfig.cache
+C:\WorkSpace\Personal Projects\test\PhoneBook\DAL\obj\Debug\net5.0\ref\DAL.dll
