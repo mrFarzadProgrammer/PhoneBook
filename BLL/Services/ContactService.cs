@@ -149,9 +149,14 @@ namespace BLL.Services
                 Message = $"مخاطب {contact.Name} {contact.LastName} با موفقیت در دیتابیس ذخیره شد.",
             };        }
 
-        public ResultDto EditContact(EditContactDto editContactDto)
+        /// <summary>
+        /// ویرایش مخاطب
+        /// </summary>
+        /// <param name="editContactDto"></param>
+        /// <returns></returns>
+        public ResultDto EditContact(EditContactDto EditContactDto)
         {
-            var contact = dataBase.Contacts.Find(editContactDto.Id);
+            var contact = dataBase.Contacts.Find(EditContactDto.Id);
 
             if (contact == null)
             {
@@ -161,11 +166,11 @@ namespace BLL.Services
                     Message = "مخاطب پیدا نشد."
                 };
             }
-            contact.Name = editContactDto.Name;
-            contact.LastName = editContactDto.LastName;
-            contact.Company = editContactDto.Company;
-            contact.PhoneNumber = editContactDto.PhoneNumber;
-            contact.Description = editContactDto.Description;
+            contact.Name = EditContactDto.Name;
+            contact.LastName = EditContactDto.LastName;
+            contact.Company = EditContactDto.Company;
+            contact.PhoneNumber = EditContactDto.PhoneNumber;
+            contact.Description = EditContactDto.Description;
             contact.CreateAt = DateTime.Now;
 
             dataBase.SaveChanges();
