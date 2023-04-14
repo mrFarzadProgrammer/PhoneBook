@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fa1mQH31diF3GGFcLFVOmME72tVtR+dQPXykRNhaPEcnetCA2kRWKN9sgd/HyYODt4cUT0Cl4bjJlJQ5JE4jNA==",
+  "dgSpecHash": "uUcxA5WgcW4eVC2FTgRnUMxVyo8LqqjbwNRhGghz4DB2aYkU9WN+VlS23wcpl6j6pKEqvyydctlDBZ44IDCLCQ==",
   "success": true,
-  "projectFilePath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\UI_winForm\\UI_winForm.csproj",
+  "projectFilePath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\UI_winForm\\UI_winForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MrProgrammer\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MrProgrammer\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

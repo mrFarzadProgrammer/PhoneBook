@@ -98,7 +98,7 @@
             // 
             // btnAddNewContact
             // 
-            btnAddNewContact.Location = new System.Drawing.Point(6, 67);
+            btnAddNewContact.Location = new System.Drawing.Point(0, 31);
             btnAddNewContact.Name = "btnAddNewContact";
             btnAddNewContact.Size = new System.Drawing.Size(230, 23);
             btnAddNewContact.TabIndex = 6;
@@ -108,9 +108,9 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new System.Drawing.Point(12, 38);
+            btnEdit.Location = new System.Drawing.Point(242, 31);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new System.Drawing.Size(224, 23);
+            btnEdit.Size = new System.Drawing.Size(230, 23);
             btnEdit.TabIndex = 7;
             btnEdit.Text = "ویرایش مخاطب";
             btnEdit.UseVisualStyleBackColor = true;

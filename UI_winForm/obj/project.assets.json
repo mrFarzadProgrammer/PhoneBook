@@ -5979,11 +5979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\UI_winForm\\UI_winForm.csproj",
+      "projectUniqueName": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\UI_winForm\\UI_winForm.csproj",
       "projectName": "UI_winForm",
-      "projectPath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\UI_winForm\\UI_winForm.csproj",
+      "projectPath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\UI_winForm\\UI_winForm.csproj",
       "packagesPath": "C:\\Users\\MrProgrammer\\.nuget\\packages\\",
-      "outputPath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\UI_winForm\\obj\\",
+      "outputPath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\UI_winForm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MrProgrammer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6000,8 +6000,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\BLL\\BLL.csproj"
+            "C:\\WorkSpace\\Personal Projects\\PhoneBook\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\BLL\\BLL.csproj"
             }
           }
         }

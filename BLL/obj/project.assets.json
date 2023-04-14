@@ -5961,11 +5961,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\BLL\\BLL.csproj",
+      "projectPath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\MrProgrammer\\.nuget\\packages\\",
-      "outputPath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\BLL\\obj\\",
+      "outputPath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MrProgrammer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5982,8 +5982,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\WorkSpace\\Personal Projects\\test\\PhoneBook\\DAL\\DAL.csproj"
+            "C:\\WorkSpace\\Personal Projects\\PhoneBook\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\WorkSpace\\Personal Projects\\PhoneBook\\DAL\\DAL.csproj"
             }
           }
         }
