@@ -85,7 +85,15 @@ namespace UI_winForm.Forms
         {
             frmAddContact frmAddContact = new frmAddContact();
             frmAddContact.ShowDialog();
-            frmMain_Load(null,null);
+            frmMain_Load(null, null);
+        }
+
+        private void btnEdit_Click_1(object sender, EventArgs e)
+        {
+            var Id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            frmEditContact frmEdit = new frmEditContact(Id);
+            frmEdit.ShowDialog();
+            frmMain_Load(null, null);
         }
     }
 }

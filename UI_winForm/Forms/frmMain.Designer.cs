@@ -35,6 +35,7 @@
             btnDelete = new System.Windows.Forms.Button();
             btnDetail = new System.Windows.Forms.Button();
             btnAddNewContact = new System.Windows.Forms.Button();
+            btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -105,11 +106,22 @@
             btnAddNewContact.UseVisualStyleBackColor = true;
             btnAddNewContact.Click += btnAddNewContact_Click;
             // 
+            // btnEdit
+            // 
+            btnEdit.Location = new System.Drawing.Point(12, 38);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new System.Drawing.Size(224, 23);
+            btnEdit.TabIndex = 7;
+            btnEdit.Text = "ویرایش مخاطب";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click_1;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(484, 521);
+            Controls.Add(btnEdit);
             Controls.Add(btnAddNewContact);
             Controls.Add(btnDetail);
             Controls.Add(btnDelete);
@@ -140,5 +152,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnDetail;
         private System.Windows.Forms.Button btnAddNewContact;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
